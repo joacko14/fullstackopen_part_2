@@ -29,11 +29,7 @@ const Course = ({ course }) => {
     <>
       <Header course={name} />
       <Content parts={parts} />
-      <Total
-        total={parts.reduce((acc, part) => {
-          return acc + part.exercises;
-        }, 0)}
-      />
+      <Total total={parts.reduce((acc, part) => acc + part.exercises, 0)} />
     </>
   );
 };
