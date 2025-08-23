@@ -106,7 +106,7 @@ const App = () => {
   return (
     <>
       <Title title="Web development curriculum" />
-      <Courses courses={courses} />;
+      <Courses courses={courses} />
     </>
   );
 };
